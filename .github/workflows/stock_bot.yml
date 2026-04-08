@@ -8,8 +8,6 @@ on:
 jobs:
   send-stock-price:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 加上這一行
     steps:
       - uses: actions/checkout@v4
       - name: 設定 Python
